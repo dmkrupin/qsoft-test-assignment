@@ -68,6 +68,13 @@ const html = () => {
 }
 exports.html = html;
 
+//Копируем картинки
+const imagesCopy = () => {
+  return gulp.src("source/img/**/*.{svg,png,jpg}")
+    .pipe(gulp.dest("build/img"))
+}
+exports.imagesCopy = imagesCopy;
+
 //Чистим папку build
 const clean = () => {
   return del("build");
@@ -78,14 +85,11 @@ exports.clean = clean;
 //Собираем build - готовый проект
 const build = gulp.series(
   clean,
-  // copy,
-  // imagesOptimize,
   gulp.parallel(
     styles,
     html,
     scripts,
-    // webpCreate,
-    // spriteCreate
+    imagesCopy,
   ),
 );
 exports.build = build;
@@ -93,14 +97,11 @@ exports.build = build;
 //Собираем билд для разработки
 exports.default = gulp.series(
   clean,
-  // copy,
-  // imagesCopy,
   gulp.parallel(
     styles,
     html,
     scripts,
-    // webpCreate,
-    // spriteCreate
+    imagesCopy,
   ),
   gulp.series(
     server,
