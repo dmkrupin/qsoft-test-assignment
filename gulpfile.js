@@ -75,6 +75,13 @@ const imagesCopy = () => {
 }
 exports.imagesCopy = imagesCopy;
 
+//Копируем шрифты
+const fontsCopy = () => {
+  return gulp.src("source/fonts/*.{woff2,woff,ttf}")
+    .pipe(gulp.dest("build/fonts"))
+}
+exports.fontsCopy = fontsCopy;
+
 //Чистим папку build
 const clean = () => {
   return del("build");
@@ -90,6 +97,7 @@ const build = gulp.series(
     html,
     scripts,
     imagesCopy,
+    fontsCopy
   ),
 );
 exports.build = build;
@@ -102,6 +110,7 @@ exports.default = gulp.series(
     html,
     scripts,
     imagesCopy,
+    fontsCopy
   ),
   gulp.series(
     server,

@@ -1,3 +1,23 @@
 .header {
-  background-color: #fff;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 17px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+.header__logo-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 135px;
+  height: 30px;
+  margin-left: 21px;
+}
+.header__search {
+  width: 100%;
+  order: 99;
+  flex-grow: 10;
+  background-color: teal;
+  border-top: 1px solid @color-grey-accent;
+  margin-top: 17px;
 }

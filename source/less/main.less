@@ -1,5 +1,29 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../fonts/Roboto.woff2") format("woff2"),
+    url("../fonts/Roboto.woff") format("woff"),
+    url("../fonts/Roboto.ttf") format("opentype");
+}
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: @color-background;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-content: start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.wrapper {
+  padding: 0 20px;
 }
