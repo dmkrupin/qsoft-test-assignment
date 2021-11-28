@@ -4,4 +4,19 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 49px;
+  padding-right: 20px;
+
+  background-image: url('../img/icons/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 24px 24px;
+
+  &::placeholder {
+    color: @color-grey-accent;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
