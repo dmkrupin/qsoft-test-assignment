@@ -1,9 +1,38 @@
 .partners {
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   background-color: @color-background;
 }
 
 .partners__title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+  font-size: 28px;
+  line-height: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.partners__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.partners__item {
+  width: 335px;
+  height: 140px;
+  margin-bottom: 20px;
+  border: 1px solid @color-grey-accent-secondary;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
