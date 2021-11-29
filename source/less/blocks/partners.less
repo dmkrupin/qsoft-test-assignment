@@ -56,19 +56,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  &:hover {
+    box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+  }
   @media (min-width: @tablet-width) {
     width: 229px;
     height: 120px;
     margin-bottom: 0;
-
-    &:nth-child(3n) {
-      width: 230px;
-    }
   }
   @media (min-width: @desktop-width) {
     width: 270px;
