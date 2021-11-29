@@ -8,6 +8,13 @@
 
   @media (min-width: @tablet-width) {
     flex-wrap: nowrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 135px;
+    padding-right: 135px;
   }
 }
 .header__logo {
@@ -17,7 +24,9 @@
   @media (min-width: @tablet-width) {
     margin-top: 25px;
     margin-bottom: 20px;
+    margin-left: 0;
   }
+
 }
 .header__logo-image {
   display: inline-block;
@@ -45,6 +54,7 @@
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
+    margin-right: 0;
     margin-top: 0;
     align-self: stretch;
     border-left: 1px solid @color-grey-accent-secondary;

@@ -10,6 +10,11 @@
   @media (min-width: @tablet-width) {
     max-width: 960px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 135px;
+    max-width: 1170px;
+  }
 }
 
 .partners__title {
@@ -36,6 +41,10 @@
     gap: 20px;
     justify-content: space-between;
   }
+  @media (min-width: @desktop-width) {
+    gap: 30px;
+    justify-content: flex-start;
+  }
 }
 .partners__item {
   width: 335px;
@@ -56,12 +65,13 @@
     width: 229px;
     height: 120px;
     margin-bottom: 0;
-    // margin-right: 20px;
 
     &:nth-child(3n) {
       width: 230px;
-      margin-right: 0;
     }
+  }
+  @media (min-width: @desktop-width) {
+    width: 270px;
   }
 }
 
