@@ -5,7 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <!-- preload -->
+  <link rel="preload" href="fonts/Roboto.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+  <title>Тестовое задание для компании QSOFT</title>
 </head>
 <body>
   <header class="header">
@@ -15,11 +19,10 @@
     <form class="header__search seacrh">
       <input class="search__input" type="text" placeholder="Найти...">
     </form>
-    <div class="user-menu">
+    <div class="header__user-menu user-menu">
       <a class="user-menu__link" href="#">
         <img class="user-menu__icon" src="img/icons/user-icon.svg" width="24" height="24" alt="Меню пользователя">
         <span class="user-menu__name">Константин</span>
-        <img class="user-menu__avatar" src="img/user-avatar.jpg" width="40" height="40" alt="Аватар пользователя">
       </a>
     </div>
   </header>
@@ -27,13 +30,27 @@
     <section class="partners">
       <h1 class="partners__title">Наши партнеры</h1>
       <ul class="partners__list">
-        <li class="partners__item"></li>
-        <li class="partners__item"></li>
-        <li class="partners__item"></li>
-        <li class="partners__item"></li>
-        <li class="partners__item"></li>
-        <li class="partners__item"></li>
-        <li class="partners__item"></li>
+        <li class="partners__item">
+          <img class="partners__logo" src="img/henkel-logo.png" width="" height="" alt="Логотип Henkel">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" src="img/john-deere-logo.png" width="" height="" alt="Логотип John Deere">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" src="img/mcdonalds-logo.png" width="" height="" alt="Логотип McDonalds">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" src="img/ikea-logo.png" width="" height="" alt="Логотип IKEA">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" src="img/reebok-logo.png" width="" height="" alt="Логотип Reebok">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" src="img/nike-logo.png" width="" height="" alt="Логотип Nike">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" src="img/caterpillar-logo.png" width="" height="" alt="Логотип Caterpillar">
+        </li>
       </ul>
     </section>
   </main>
