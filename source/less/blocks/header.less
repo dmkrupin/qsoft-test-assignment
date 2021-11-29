@@ -5,6 +5,10 @@
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: nowrap;
+  }
 }
 .header__logo {
   margin-top: 17px;
