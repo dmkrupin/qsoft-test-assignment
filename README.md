@@ -1,10 +1,7 @@
 [![wakatime](https://wakatime.com/badge/github/dmkrupin/qsoft-test-assignment.svg)](https://wakatime.com/badge/github/dmkrupin/qsoft-test-assignment)
 ## qsoft-test-assignment
 
-# Необходимо, сверстать страницу сайта, выполнив при этом все требования, указанные ниже.
-
-# Дизайн макет страницы:
-[https://www.figma.com/file/uy85DPXU715pD16KkshYUZ/QSOFT.-Front-end-Junior-Test-Task?node-id=1642%3A866](https://www.figma.com/file/uy85DPXU715pD16KkshYUZ/QSOFT.-Front-end-Junior-Test-Task?node-id=1642%3A866)
+[смотреть страницу](https://dmkrupin.github.io/qsoft-test-assignment/)
 
 # Требования к заданию:
 
